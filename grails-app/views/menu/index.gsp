@@ -47,8 +47,8 @@
                     <p>Carne desmechada, queso amarillo, lechuga, tomate, pimentón, apio, mostaza, salsa BBQ,
                     pasta de tomate, cebolla roja y salsa MatchFood.</p>
                     <p>
-                        <a class="btn btn-primary btn-large" id="btn_san_1">+ Añadir al Carro</a>
-                        <!--a class="btn btn-primary btn-large" href="${createLink(controller: 'menu', action: 'makeOrderT1')}">+ Añadir al Carro</a-->
+                        <!-- class="btn btn-primary btn-large" id="btn_san_1">+ Añadir al Carro</-->
+                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'index')}">+ Añadir al Carro</a>
                     </p>
                 </div>
             </div>
