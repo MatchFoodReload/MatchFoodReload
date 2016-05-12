@@ -10,6 +10,6 @@ class Ingrediente {
         id_ingrediente nullable: false
         nombre nullable: false
         descripcion nullable: true
-        precio_ingrediente nullable: false
+        precio_ingrediente nullable: true
     }
 }

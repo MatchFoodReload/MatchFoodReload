@@ -14,7 +14,9 @@ def mailService
 def crearUsuario(){
         def userRole = Role.findOrSaveWhere(authority: 'ROLE_USER')
         def user = User.findOrSaveWhere(name: params.nameR, email: params.emailR, address: params.addressR, phone: params.phoneR, username: params.usernameR, password: params.passwordR)
-
+        if(User.find(email:params.emailR, username:params.nameR)){
+            render("ya estaba registrado ese email o usuario")
+        }else{
         try
         {
             if(!user.authorities.contains(userRole) ){
@@ -45,6 +47,7 @@ def crearUsuario(){
         catch (Exception e)
         {
 
+        }
         }
 
     }
