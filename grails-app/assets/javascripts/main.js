@@ -18,6 +18,7 @@ $(function() {
         '<a class="list-group-item" id="profileBtn">Perfil</a>'+ //profileFB/index
         '<a class="list-group-item" id="favBtn">Favoritos</a>'+ //favorites/index
         '<a class="list-group-item" id="reqBtn">Mis Pedidos</a>'+ //orders/index
+        '<a class="list-group-item" id="carComp">Mi Carrito de Compras</a>'+ //TestShoppingCart/index
         '</div>'+
         '<li class="divider"></li>'+
         '<div style="text-align: left; padding-bottom: 10px;">'+

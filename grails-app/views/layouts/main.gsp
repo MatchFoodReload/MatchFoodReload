@@ -121,6 +121,10 @@
             $(document).on('click', '#reqBtn', function(e){
                 document.getElementById("reqBtn").href= "${createLink(controller: 'orders' , action:'index')}";
             })
+
+            $(document).on('click', '#carComp', function(e){
+                document.getElementById("carComp").href= "${createLink(controller: 'testShoppingCart' , action:'index')}";
+            })
         </script>
 		<g:layoutBody/>
         <div class="col-sm-12" style="padding: 20px;background-color: darkgray;">
