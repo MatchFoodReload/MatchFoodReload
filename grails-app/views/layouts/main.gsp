@@ -96,6 +96,7 @@
                                             <a class="list-group-item" href="${createLink(controller: 'profile', action: 'index')}">Perfil</a>
                                             <a class="list-group-item" href="${createLink(controller: 'favorites', action: 'index')}">Favoritos</a>
                                             <a class="list-group-item" href="${createLink(controller: 'orders', action: 'index')}">Mis Pedidos</a>
+                                            <a class="list-group-item" href="${createLink(controller: 'TestShoppingCart', action: 'index')}">Carrito de Compras</a>
                                         </div>
                                         <g:form controller="logout">
                                             <g:submitButton class="btn btn-primary" name="logout" value="Cerrar Sesión" />
