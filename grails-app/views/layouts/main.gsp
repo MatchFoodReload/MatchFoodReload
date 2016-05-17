@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="${createLink(url: '/', action: 'index')}">Inicio</a></li>
-                        <li><a href="${createLink(controller: 'menu', action: 'index')}">Menú</a></li>
+                        <li><a href="${createLink(controller: 'testShoppingCart', params="[nameS: 'Inicial']", action: 'index')}">Menú</a></li>
                         <li><a href="${createLink(controller: 'prepare', action: 'index')}">Prepáralo a tu gusto</a></li>
                         <li><a href="${createLink(controller: 'company', action: 'index')}">¿Quiénes Somos?</a></li>
                         <li><a href="${createLink(controller: 'contact', action: 'index')}">Contáctenos</a></li>

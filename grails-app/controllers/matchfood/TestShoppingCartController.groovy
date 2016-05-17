@@ -1,5 +1,6 @@
 package matchfood
 
+import MatchFoodLogin.Producto
 import com.metasieve.shoppingcart.Shoppable
 import com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct
 import com.metasieve.shoppingcart.ShoppingCartTestProduct
@@ -9,20 +10,57 @@ import grails.plugin.springsecurity.annotation.Secured
 class TestShoppingCartController {
 
     def shoppingCartService
-
+    def i = 0
     def index = {
-        if (ShoppingCartTestProduct.count() == 0) {
-            def product1 = new ShoppingCartTestProduct(name:'Test Product 1')
-            product1.save()
-            def product2 = new ShoppingCartTestProduct(name:'Test Product 2')
-            product2.save()
-            def product3 = new ShoppingCartInterfaceTestProduct(name:'Test Product 3', shoppingItem:shoppingCartService.getShoppingItem())
-            product3.save()
+        if (Producto.count == 0) {
+            def producto = new Producto(name: 'prueba sand', shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
         }
-        redirect(action:show, params:params)
+        //redirect(action:show, params:params)
+        render(view:"index")
     }
 
     def show = { }
+    def carneDeRes() {
+        if(i==0){
+            def producto = new Producto(name: 'carne', shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
+            producto.addToShoppingCart()
+            i = i+1
+        }
+        render(view:"index")
+    }
+
+    def jamonCordero() {
+        if(i==0){
+            def producto = new Producto(name: 'JamonCordero', shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
+            producto.addToShoppingCart()
+            i = i+1
+        }
+        render(view:"index")
+    }
+
+    def salmon() {
+        if(i==0){
+            def producto = new Producto(name: 'carne', shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
+            producto.addToShoppingCart()
+            i = i+1
+        }
+        render(view:"index")
+    }
+
+    def mexicano() {
+        if(i==0){
+            def producto = new Producto(name: 'mexicano', shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
+            producto.addToShoppingCart()
+            i = i+1
+        }
+        render(view:"index")
+    }
+
 
     def add = {
         def product
