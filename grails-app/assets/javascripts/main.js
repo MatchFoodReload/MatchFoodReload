@@ -80,24 +80,14 @@ $(function() {
             {},
             function(response) {
                 var count= 0;
-                addRows();
                 $.each(response.data, function(i, item) {
                     var nameToShow = item.name;
                     count++;
-                    friends.push('<img src="http://graph.facebook.com/'+item.id+'/picture?type=square" class="pic" title="'+item.name+'" > </img>');
-                    if(count%4==0){
-                        friends.push('</div>' +
-                            '</div>');
-                        addRows();
-                    }
+                    friends.push('<div class="block"><img src="http://graph.facebook.com/'+item.id+'/picture?type=square" class="pic" title="'+item.name+'" ></div>');
                 });
                 $('#gridContainer').append(friends.join(''));
             }
         );
-    }
-    function addRows(){
-        friends.push('<div class="row">');
-        friends.push('<div class="col-sm-4">');
     }
     var facebookLogin = function(){
         checkLoginState(function(response) {
@@ -117,7 +107,6 @@ $(function() {
                     appear();
                     appearLoginButton();
                     $('#facebook-session').remove();
-                    redirect();
                 })
             }
         });
@@ -134,6 +123,7 @@ $(function() {
         e.preventDefault();
         if (confirm("¿Está seguro?")) {
             facebookLogout();
+            redirect();
         }else
             return false;
     })
@@ -159,8 +149,6 @@ $(function() {
         document.getElementById("dropdown-menuNav").style.visibility = "visible";
     }
     function redirect(){
-        $(document).on('click', '#logoutFB', function(e){
-            document.getElementById("logoutFB").href= "${createLink(url: '/' , action:'index')}";
-        })
+        document.getElementById("logoutFB").href= "${createLink(url: '/' , action:'index')}";
     }
 })

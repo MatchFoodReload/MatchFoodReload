@@ -11,17 +11,19 @@
     <meta name="layout" content="main">
     <script type="javascript" src="main.js" ></script>
     <asset:stylesheet src="profileFB.css" />
-
 </head>
 
 <body>
 
-    <div class="myContainer" id ="imgFrame">
-        <img class="img-circle" id="realImg">
-        <h2 id="nameSpace"><strong></strong></h2>
-        <h3>Amigos que usan MatchFood</h3>
-        <div class="imgContainer" id="gridContainer">
-        </div>
+<div class="myContainer"  id ="imgFrame">
+    <img class="img-circle" id="realImg">
+    <h2 id="nameSpace"><strong></strong></h2>
+    <h3>Amigos que usan MatchFood</h3>
+    <div class="gridContainer" id="gridContainer">
     </div>
+    <div>
+        <h3>espacio para algo</h3>
+    </div>
+</div>
 </body>
 </html>

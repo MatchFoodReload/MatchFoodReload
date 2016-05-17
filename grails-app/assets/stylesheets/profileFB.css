@@ -1,12 +1,17 @@
-.pic:hover {
-    width:60px;
-}
-.imgContainer{
-    /*text-align: match-parent;
-    padding:auto;
-    margin: 0 auto;*/
-    margin-left: 40%;
-}
 .myContainer{
+    float: left;
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+    background: #f2f2f2;
     text-align: center;
 }
+.gridContainer{
+    margin: 0 auto;
+    max-width:250px;
+}
+.block {
+    border:1px solid #999;
+    display: inline-block;
+}
+
