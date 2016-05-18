@@ -26,27 +26,37 @@
         </p>
     </header>
 
-    <div style="background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #DDDDDD;
-    border-radius: 6px 6px 6px 6px;
-    bottom: 500px;
-    left: auto;
-    margin-left: 1150px;
+    <div id="divCar" style="background-color: transparent;
+    bottom: 480px;
+    margin-left: 1050px;
     padding: 10px 0 0;
     position: fixed;
     text-align: center;
-    width: 300px;
+    z-index: 16;">
+        <img style="background-color: transparent; width: 50%; height: 50%;" src="${createLinkTo(dir:'images',file:'BotonCarritoCompras.png')}">
+    </div>
+
+    <div id="divCarBox" style="background: none repeat scroll 0 0 darkgray; visibility: hidden;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    bottom: 280px;
+    left: auto;
+    margin-left: 750px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 400px;
     z-index: 15;">
         <div class="body">
-            <h1>Shopping Cart</h1>
+            <h3>Carrito de Compras</h3>
             <div class="list">
                 <table>
                     <thead>
                     <tr>
 
-                        <th>Product</th>
+                        <th>Sándwich&nbsp;&nbsp;&nbsp;</th>
 
-                        <th>Qty</th>
+                        <th>&nbsp;Cantidad&nbsp;</th>
 
                         <th>&nbsp;</th>
 
@@ -64,16 +74,16 @@
                 <g:remoteLink action="checkOut"
                               update="shoppingCartContent"
                               onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-                    Check out
+                    Realizar Pedido
                 </g:remoteLink>
             </div>
-            <h1>Products</h1>
+            <h3>Emparedados Preseleccionados</h3>
             <div class="list">
                 <table>
                     <thead>
                     <tr>
 
-                        <th>Product</th>
+                        <th>Producto&nbsp;</th>
 
                         <th>&nbsp;</th>
 
@@ -84,14 +94,17 @@
                         <tr>
                             <td>
                                 ${product}
+                                &nbsp;&nbsp;
                             </td>
                             <td>
+                                &nbsp;
                                 <g:remoteLink action="add"
                                               params="${[id:product.id, class:product.class, version:product.version]}"
                                               update="shoppingCartContent"
                                               onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-                                    Add
+                                    Agregar
                                 </g:remoteLink>
+                                &nbsp;
                             </td>
                         </tr>
                     </g:each>
@@ -105,7 +118,7 @@
                                               params="${[id:product.id, class:product.class, version:product.version]}"
                                               update="shoppingCartContent"
                                               onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-                                    Add
+                                    Agregar
                                 </g:remoteLink>
                             </td>
                         </tr>
@@ -253,5 +266,14 @@
         </div>
     </div>
 </div>
+<g:javascript>
+$("#divCar").click(function () {
+    var visibilidad = $("#divCarBox").css("visibility");
+    if (visibilidad === "hidden")
+        $("#divCarBox").css("visibility", "visible");
+    else
+        $("#divCarBox").css("visibility", "hidden");
+})
+</g:javascript>
 </body>
 </html>

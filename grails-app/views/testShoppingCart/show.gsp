@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main" />
-        <title>Shopping Cart</title>    
+        <title>Carro de Compras</title>
 		<g:javascript library="application" />     
         <g:javascript library="prototype" />
         <g:javascript library="scriptaculous" />
@@ -13,17 +13,17 @@
             <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
         </div>
         <div class="body">
-            <h1>Shopping Cart</h1>
+            <h1>Carro de Compras</h1>
             <div class="list">
                 <table>
                     <thead>
                         <tr>
                         
-                   	        <th>Product</th>
-                        
-                   	        <th>Qty</th>
+                   	        <th>Sándwich</th>
 
-                   	        <th>&nbsp;</th>
+							<th>&nbsp;</th>
+
+                   	        <th>Cantidad</th>
 
                    	        <th>&nbsp;</th>
 
@@ -42,13 +42,13 @@
 					Check out
 				</g:remoteLink>
 			</div>
-			<h1>Products</h1>
+			<h1>Mis emparedados preseleccionados</h1>
 			<div class="list">
                 <table>
                     <thead>
                         <tr>
                         
-                   	        <th>Product</th>
+                   	        <th>Sándwches</th>
 
                    	        <th>&nbsp;</th>
                    	    
