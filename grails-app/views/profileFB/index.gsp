@@ -21,9 +21,6 @@
     <h3>Amigos que usan MatchFood</h3>
     <div class="gridContainer" id="gridContainer">
     </div>
-    <div>
-        <h3>espacio para algo</h3>
-    </div>
 </div>
 </body>
 </html>

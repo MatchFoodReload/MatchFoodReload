@@ -77,7 +77,7 @@
                     Realizar Pedido
                 </g:remoteLink>
             </div>
-            <h3>Emparedados Preseleccionados</h3>
+            <h3>Lista de deseos</h3>
             <div class="list">
                 <table>
                     <thead>
@@ -205,7 +205,7 @@
                     <p>Estragón, lechuga romana, tomate, cebolla, champiñones, zanahoria, apio, pimentón,
                     maíz, salsa teriyaki, queso amarillo y salsa MatchFood.</p>
                     <p>
-                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'vejetariano')}">+ Añadir al Carro</a>
+                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'vegetariano')}">+ Añadir al Carro</a>
                     </p>
                 </div>
             </div>
@@ -218,7 +218,7 @@
                     <h3>Fondue de Carne</h3>
                     <p>Queso funido, champiñones salteados, salsa de la casa, tocineta y tomate</p>
                     <p>
-                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'FondueDeRes')}">+ Añadir al Carro</a>
+                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'fondueCarne')}">+ Añadir al Carro</a>
                     </p>
                 </div>
             </div>
@@ -232,7 +232,7 @@
                     <h3>Lomo de Res</h3>
                     <p>Tiras de lomo de res, aritos de cebolla, tomate, pimenton, queso mozzarella y salsa Match Food Reload</p>
                     <p>
-                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'LomoDeRes')}">+ Añadir al Carro</a>
+                        <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'lomoRes')}">+ Añadir al Carro</a>
                     </p>
                 </div>
             </div>

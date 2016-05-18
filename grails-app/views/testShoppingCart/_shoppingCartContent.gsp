@@ -11,7 +11,7 @@
 				params="${[id:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).id, class:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).class, version:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).version]}"
 				update="shoppingCartContent"
 				onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-				Add
+				Agregar
 			</g:remoteLink>
 		</td>
 		<td>
@@ -19,7 +19,7 @@
 				params="${[id:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).id, class:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).class, version:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).version]}"
 				update="shoppingCartContent"
 				onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-				Remove
+				Remover
 			</g:remoteLink>
 		</td>
 		<td>
@@ -27,14 +27,14 @@
 				params="${[id:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).id, class:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).class, version:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).version]}"
 				update="shoppingCartContent"
 				onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-				Remove All
+				Remover Todos
 			</g:remoteLink>
 		</td>
 	</tr>
 </sc:each>
 <g:if test="${checkedOutItems}">
 	<tr>
-		<td><h2>Checked out items</h2></td>
+		<td><h2>Elementos despachados</h2></td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
