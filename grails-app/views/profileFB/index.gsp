@@ -14,11 +14,10 @@
 </head>
 
 <body>
-
-<div class="myContainer"  id ="imgFrame">
+<div class="myContainer"  id ="imgFrame" style="padding: 15px;">
     <img class="img-circle" id="realImg">
     <h2 id="nameSpace"><strong></strong></h2>
-    <h3>Amigos que usan MatchFood</h3>
+    <h3>Amigos que también disfrutan MatchFood</h3>
     <div class="gridContainer" id="gridContainer">
     </div>
 </div>

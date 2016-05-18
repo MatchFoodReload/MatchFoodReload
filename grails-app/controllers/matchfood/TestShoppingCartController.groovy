@@ -191,3 +191,4 @@ class TestShoppingCartController {
         render(template:'shoppingCartContent', model:['checkedOutItems':checkedOutItems], plugin:'shoppingCart')
     }
 }
+

@@ -379,7 +379,7 @@ $('#cebolla').click(function() {
     }else{
         inDispatcher();
         var wait = window.setTimeout( function(){
-            $('#tocinoPlato').css("visibility", "visible");}, 500
+            $('#cebollaPlato').css("visibility", "visible");}, 500
         );
         $('#cebollaPlato').css("visibility", "visible");
         $('#cebollaPlato').css("z-index", profundidad.toString());

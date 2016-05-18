@@ -267,13 +267,13 @@
     </div>
 </div>
 <g:javascript>
-$("#divCar").click(function () {
-    var visibilidad = $("#divCarBox").css("visibility");
-    if (visibilidad === "hidden")
-        $("#divCarBox").css("visibility", "visible");
-    else
-        $("#divCarBox").css("visibility", "hidden");
-})
+    $("#divCar").click(function () {
+        var visibilidad = $("#divCarBox").css("visibility");
+        if (visibilidad === "hidden")
+            $("#divCarBox").css("visibility", "visible");
+        else
+            $("#divCarBox").css("visibility", "hidden");
+    })
 </g:javascript>
 </body>
 </html>
