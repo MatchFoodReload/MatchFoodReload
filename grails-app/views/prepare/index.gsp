@@ -11,6 +11,9 @@
     <meta name="layout" content="main">
     <asset:javascript src="Interact/interact.min.js" />
     <asset:stylesheet src="Interact/interact.css" />
+    <asset:stylesheet src="Animate/animate.css" />
+    <asset:stylesheet src="principal.css" />
+
 </head>
 <body>
 <div style="display: block">
@@ -27,6 +30,7 @@
                     <input id="panBag" type="image" style ="height: 100%; width: 100%" src="${createLinkTo(dir:'images',file:'DragAndDrop/presentacionPanBaguette.png')}" />
                     <p style="text-align: center"><b>Baguette</b></p>
                 </div>
+
                 <div class="col-sm-3">
                     <input id="panBla" type="image" style ="height: 100%; width: 100%" src="${createLinkTo(dir:'images',file:'DragAndDrop/presentacionPanBlanco.png')}" />
                     <p style="text-align: center"><b>Blanco</b></p>
@@ -103,10 +107,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Salsas</h3>
+            </div>
+
+            <div class="panel-body">
+                <div class="col-sm-4">
+                    <input id="BBQ" type="image" style ="height: 100%; width: 100%" src="${createLinkTo(dir:'images',file:'DragAndDrop/presentacionBBQ.png')}" />
+                </div>
+                <div class="col-sm-4">
+                    <input id="MM" type="image" style ="height: 100%; width: 100%" src="${createLinkTo(dir:'images',file:'DragAndDrop/presentacionMM.png')}" />
+                </div>
+                <div class="col-sm-4">
+                    <input id="casa" type="image" style ="height: 100%; width: 100%" src="${createLinkTo(dir:'images',file:'DragAndDrop/presentacionCasa.png')}" />
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    <div class="col-sm-8" style="padding: 10px; padding-bottom: 1000px; display: block;">
+    <div class="col-sm-8" style="padding: 10px; padding-bottom: 1050px; display: block;">
         <div style="display: block;">
-            <input id="mesa" style="z-index: 1; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/mesaMontaje.png')}" />
+            <input id="mesa" style="z-index: 1; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/mesaMontaje2.png')}" />
+            <img id="dispatcher"  style="background-color: rgba(0,0,0,0); opacity: 0; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/tapaBandeja.png')}" />
+
             <div class="leftStuff panel" id="outer-dropzone">
                 <input class="dropzone" id="panBaguette1" style="visibility: hidden; z-index: 2; width: 40%;left: 180px; top: 270px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/basePanBaguette.png')}" />
                 <input class="dropzone" id="panBlanco1" style="visibility: hidden; z-index: 2; width: 40%;left: 180px; top: 270px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/basePanBlanco.png')}" />
@@ -124,7 +150,7 @@
             <img id="jamonPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/jamonPlato.png')}" />
             <img id="polloPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/polloPlato.png')}" />
             <img id="salmonPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/salmonPlato.png')}" />
-            <img id="tocinoPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/TocinoPlato.png')}" />
+            <img id="tocinoPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/tocinoPlato.png')}" />
             <img id="champinonPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/campinonPlato.png')}" />
             <img id="cebollaPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/cebollaPlato.png')}" />
             <img id="lechugaPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/lechugaPlato.png')}" />
@@ -132,14 +158,32 @@
             <img id="pimentonPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/pimentonPlato.png')}" />
             <img id="quesoPlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/quesoPlato.png')}" />
             <img id="tomatePlato" class="draggable" style="background-color: rgba(0,0,0,0); visibility: hidden; z-index: 3; width: 38%;left: 20px; top: 650px; position: absolute;" type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/tomatePlato.png')}" />
+
+            <img id="salsaBBQ"  style="visibility: hidden; z-index: 4; width: 40%;left: 170px; top: 225px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/salsaBBQ.png')}" />
+            <img id="salsaMM"  style="visibility: hidden; z-index: 4; width: 40%;left: 170px; top: 225px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/salsaMM.png')}" />
+            <img id="salsaCasa"  style="visibility: hidden; z-index: 4; width: 40%;left: 170px; top: 225px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/salsaCasa.png')}" />
+
+            <img id="frasco"  style="visibility: hidden; z-index: 4; width: 40%;left: 150px; top: 300px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/frasco.png')}" />
+
+
+            <div style="display: block">
+                <form role="form" controller="/MatchFood/PrepareController" action="index" method="post">
+                    <input id="totalR" name="totalR" style="visibility: hidden" value="0"/>
+                    <input id="btn_terminar" value="Terminar" type="submit" style="display: block; z-index: 3;left: 630px; top: 980px; position: absolute;" class="btn btn-default btn-lg"/>
+                </form>
+            </div>
+
         </div>
-        <div style="display: block">
-            <form role="form" controller="/MatchFood/PrepareController" action="makeOrderPrepare" method="post">
-                <input id="totalR" name="totalR" style="visibility: hidden" value="0"/>
-                <input id="btn_terminar" value="Terminar" type="submit" style="display: block; z-index: 3;left: 630px; top: 730px; position: absolute;" class="btn btn-default btn-lg"/>
-            </form>
-        </div>
+
+        <p id="ptutorial" style="visibility: visible; z-index: 4; left: 410px; top: 750px; position: absolute; color: white"><b>No olvides colocar los ingredientes sobre tu sandwich.</b></p>
+        <img id="tutorialBasePan"  style="visibility: hidden; z-index: 4; width: 10%;left: 650px; top: 800px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/basePanBaguette.png')}" />
+        <img id="tutorialTocino"  style="visibility: hidden; z-index: 4; width: 10%;left: 650px; top: 800px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/tocinoPlato.png')}" />
+
     </div>
+
+
+
+</div>
 </div>
 
 <!--div id="visualizer-panel">
@@ -155,8 +199,32 @@
     var contadorElementos = 0;
     var contadorCarnes = 0;
     var contadorAcompañantes = 0;
+    var contadorSalsas = 0;
     var profundidad = 0;
     var pan = 0;
+
+function inDispatcher() {
+
+    $('#dispatcher').css("visibility","visible");
+    var wait = window.setTimeout( function(){
+        $('#dispatcher').removeClass().addClass("animated rollOut" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();
+        });}, 500
+    );
+    $('#dispatcher').css("opacity","0");
+};
+
+function tutorial() {
+
+    $('#ptutorial').removeClass().addClass("animated wobble " ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();})
+
+    $('#tutorialTocino').removeClass().addClass("animated slideInLeft " ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();})
+
+    $('#tutorialBasePan').removeClass().addClass("animated slideInRight " ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();})
+};
 
     $('#btn_terminar').click(function() {
         profundidad = profundidad + 2;
@@ -203,21 +271,33 @@ $('#jamon').click(function() {
     if( $('#jamonPlato').is("visible") ){
         $('#jamonPlato').css("visibility", "hidden");
     }else{
-        $('#jamonPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#jamonPlato').css("visibility", "visible");}, 500
+        );
+
         $('#jamonPlato').css("z-index", profundidad.toString());
     }
+    tutorial();
 });
 
 $('#atun').click(function() {
     contadorElementos = contadorElementos + 1;
     contadorCarnes = contadorCarnes + 1;
     profundidad = contadorElementos + 2;
+
     if( $('#atunPlato').is("visible") ){
         $('#atunPlato').css("visibility", "hidden");
     }else{
-        $('#atunPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#atunPlato').css("visibility", "visible");}, 500
+        );
+
         $('#atunPlato').css("z-index", profundidad.toString());
+
     }
+        tutorial();
 });
 
 $('#salmon').click(function() {
@@ -227,9 +307,13 @@ $('#salmon').click(function() {
     if( $('#salmonPlato').is("visible") ){
         $('#salmonPlato').css("visibility", "hidden");
     }else{
-        $('#salmonPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#salmonPlato').css("visibility", "visible");}, 500
+        );
         $('#salmonPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
 });
 
 $('#pollo').click(function() {
@@ -239,9 +323,15 @@ $('#pollo').click(function() {
     if( $('#polloPlato').is("visible") ){
         $('#polloPlato').css("visibility", "hidden");
     }else{
-        $('#polloPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#polloPlato').css("visibility", "visible");}, 500
+        );
+
         $('#polloPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#tocino').click(function() {
@@ -251,9 +341,15 @@ $('#tocino').click(function() {
     if( $('#tocinoPlato').is("visible") ){
         $('#tocinoPlato').css("visibility", "hidden");
     }else{
-        $('#tocinoPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#tocinoPlato').css("visibility", "visible");}, 500
+        );
+
         $('#tocinoPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#champinon').click(function() {
@@ -263,9 +359,15 @@ $('#champinon').click(function() {
     if( $('#champinonPlato').is("visible") ){
         $('#champinonPlato').css("visibility", "hidden");
     }else{
-        $('#champinonPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#champinonPlato').css("visibility", "visible");}, 500
+        );
+
         $('#champinonPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#cebolla').click(function() {
@@ -275,9 +377,15 @@ $('#cebolla').click(function() {
     if( $('#cebollaPlato').is("visible") ){
         $('#cebollaPlato').css("visibility", "hidden");
     }else{
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#tocinoPlato').css("visibility", "visible");}, 500
+        );
         $('#cebollaPlato').css("visibility", "visible");
         $('#cebollaPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#lechuga').click(function() {
@@ -287,9 +395,15 @@ $('#lechuga').click(function() {
     if( $('#lechugaPlato').is("visible") ){
         $('#lechugaPlato').css("visibility", "hidden");
     }else{
-        $('#lechugaPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#lechugaPlato').css("visibility", "visible");}, 500
+        );
+
         $('#lechugaPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#pepino').click(function() {
@@ -299,9 +413,15 @@ $('#pepino').click(function() {
     if( $('#pepinoPlato').is("visible") ){
         $('#pepinoPlato').css("visibility", "hidden");
     }else{
-        $('#pepinoPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#pepinoPlato').css("visibility", "visible");}, 500
+        );
+
         $('#pepinoPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#pimenton').click(function() {
@@ -311,9 +431,15 @@ $('#pimenton').click(function() {
     if( $('#pimentonPlato').is("visible") ){
         $('#pimentonPlato').css("visibility", "hidden");
     }else{
-        $('#pimentonPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#pimentonPlato').css("visibility", "visible");}, 500
+        );
+
         $('#pimentonPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#queso').click(function() {
@@ -323,9 +449,15 @@ $('#queso').click(function() {
     if( $('#quesoPlato').is("visible") ){
         $('#quesoPlato').css("visibility", "hidden");
     }else{
-        $('#quesoPlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#quesoPlato').css("visibility", "visible");}, 500
+        );
+
         $('#quesoPlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#tomate').click(function() {
@@ -335,9 +467,15 @@ $('#tomate').click(function() {
     if( $('#tomate').is("visible") ){
         $('#tomatePlato').css("visibility", "hidden");
     }else{
-        $('#tomatePlato').css("visibility", "visible");
+        inDispatcher();
+        var wait = window.setTimeout( function(){
+            $('#tomatePlato').css("visibility", "visible");}, 500
+        );
+
         $('#tomatePlato').css("z-index", profundidad.toString());
     }
+        tutorial();
+
 });
 
 $('#panBag').click(function(){
@@ -370,63 +508,90 @@ $('#panQue').click(function(){
     $('#panQueso1').css("visibility", "visible");
 });
 
+$('#BBQ').click(function(){
+    contadorElementos = contadorElementos + 1;
+    contadorSalsas = contadorSalsas + 1;
+    profundidad = contadorElementos + 2;
+    $('#salsaBBQ').css("visibility", "visible");
+    $('#salsaBBQ').css("z-index", profundidad.toString());
+    <%--$('#frasco').css("visibility","visible");
+    $('#frasco').css("animation","ingrediente");--%>
 
-interact('.draggable').draggable({
-    inertia: true,
-    restrict: {
-        restriction: "#visualizer-panel",
-        endOnly: true,
-        elementRect: { top: -0.8, left: -0.45, bottom: -0.2, right: 2.55 }
-    },
-    onmove: function (event) {
-        var target = event.target,
-        // keep the dragged position in the data-x/data-y attributes
-            x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-            y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-        // translate the element
-        target.style.webkitTransform =
-                target.style.transform =
-                        'translate(' + x + 'px, ' + y + 'px)';
+    });
 
-        // update the posiion attributes
-        target.setAttribute('data-x', x);
-        target.setAttribute('data-y', y);
-    },
-    onend: function(event) {
-        console.log(event);
-    }
-});
+    $('#MM').click(function(){
+        contadorElementos = contadorElementos + 1;
+        contadorSalsas = contadorSalsas + 1;
+        profundidad = contadorElementos + 2;
+        $('#salsaMM').css("visibility", "visible");
+        $('#salsaMM').css("z-index", profundidad.toString());
+    });
 
-interact('.dropzone').dropzone({
-    accept: '.draggable',
-    overlap: 0.01,
+    $('#casa').click(function(){
+        contadorElementos = contadorElementos + 1;
+        contadorSalsas = contadorSalsas + 1;
+        profundidad = contadorElementos + 2;
+        $('#salsaCasa').css("visibility", "visible");
+        $('#salsaCasa').css("z-index", profundidad.toString());
+    });
 
-    // add / remove dropzone feedback
-    ondropactivate: function (event) {
-        event.target.classList.add('drop-active');
-    },
-    ondropdeactivate: function (event) {
-        event.target.classList.remove('drop-active');
-    },
+        interact('.draggable').draggable({
+        inertia: true,
+        restrict: {
+            restriction: "#visualizer-panel",
+            endOnly: true,
+            elementRect: { top: -0.8, left: -0.45, bottom: -0.2, right: 2.55 }
+        },
+        onmove: function (event) {
+            var target = event.target,
+            // keep the dragged position in the data-x/data-y attributes
+                x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+                y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-    // add / remove dropzone feedback
-    ondragenter: function (event) {
-        var draggableElement = event.relatedTarget,
-                dropzoneElement = event.target;
-        dropzoneElement.classList.add('drop-target');
-        draggableElement.classList.add('can-drop');
-    },
-    ondragleave: function (event) {
-        event.target.classList.remove('drop-target');
-        event.relatedTarget.classList.remove('can-drop');
-    },
+            // translate the element
+            target.style.webkitTransform =
+                    target.style.transform =
+                            'translate(' + x + 'px, ' + y + 'px)';
 
-    // drop successful
-    ondrop: function (event) {
-        console.log(event);
-    }
-});
+            // update the posiion attributes
+            target.setAttribute('data-x', x);
+            target.setAttribute('data-y', y);
+        },
+        onend: function(event) {
+            console.log(event);
+        }
+    });
+
+    interact('.dropzone').dropzone({
+        accept: '.draggable',
+        overlap: 0.01,
+
+        // add / remove dropzone feedback
+        ondropactivate: function (event) {
+            event.target.classList.add('drop-active');
+        },
+        ondropdeactivate: function (event) {
+            event.target.classList.remove('drop-active');
+        },
+
+        // add / remove dropzone feedback
+        ondragenter: function (event) {
+            var draggableElement = event.relatedTarget,
+                    dropzoneElement = event.target;
+            dropzoneElement.classList.add('drop-target');
+            draggableElement.classList.add('can-drop');
+        },
+        ondragleave: function (event) {
+            event.target.classList.remove('drop-target');
+            event.relatedTarget.classList.remove('can-drop');
+        },
+
+        // drop successful
+        ondrop: function (event) {
+            console.log(event);
+        }
+    });
 
 
 

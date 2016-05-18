@@ -59,9 +59,17 @@ $( document ).ready(function() {
         alert("Sándwich Mexicano ingresado al carro de compras correctamente");
     });
 
+
+
+
+
+
     function AdddivTableCar(precio) {
         $("#inputTableCar").val(precio);
     }
+
+
+
 });
 
 var rol = "usuario";
@@ -90,3 +98,5 @@ function correctSendEmail() {
 function errorSendEmail() {
     alert ("Oooops. ¡Algo ha ocurrido! Nuestros Ingenieros trabajarán inmediatamente para solucionarlo.");
 }
+
+
