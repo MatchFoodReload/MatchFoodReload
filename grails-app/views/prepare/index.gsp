@@ -177,7 +177,7 @@
 
         <p id="ptutorial" style="visibility: visible; z-index: 4; left: 410px; top: 750px; position: absolute; color: white"><b>No olvides colocar los ingredientes sobre tu sandwich.</b></p>
         <img id="tutorialBasePan"  style="visibility: hidden; z-index: 4; width: 10%;left: 650px; top: 800px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/basePanBaguette.png')}" />
-        <img id="tutorialTocino"  style="visibility: hidden; z-index: 4; width: 10%;left: 650px; top: 800px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/tocinoPlato.png')}" />
+        <img id="tutorialTocino"  style="visibility: hidden; z-index: 4; width: 10%;left: 650px; top: 800px; position: absolute; " type="image" src="${createLinkTo(dir:'images',file:'DragAndDrop/TocinoPlato.png')}" />
 
     </div>
 
