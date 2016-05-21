@@ -54,7 +54,7 @@
                     <thead>
                     <tr>
 
-                        <th>Sándwich&nbsp;&nbsp;&nbsp;</th>
+                        <th>Sándwich.........Precio</th>
 
                         <th>&nbsp;Cantidad&nbsp;</th>
 
@@ -89,7 +89,7 @@
 
                     </tr>
                     </thead>
-                    <tbody id="shoppingCartContent">
+                    <tbody id="shoppingCartContent1">
                     <g:each in="${com.metasieve.shoppingcart.Shoppable.list()}" var="product">
                         <tr>
                             <td>
@@ -150,6 +150,7 @@
                     <p>Carne desmechada, queso amarillo, lechuga, tomate, pimentón, apio, mostaza, salsa BBQ,
                     pasta de tomate, cebolla roja y salsa MatchFood.</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 9.000</p></b></h3>
                         <!-- class="btn btn-primary btn-large" id="btn_san_1">+ Añadir al Carro</-->
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'carneDeRes')}">+ Añadir al Carro</a>
                     </p>
@@ -164,6 +165,7 @@
                     <h3>Cordero</h3>
                     <p>Jamón de cordero, frescos vegetales, queso mozzarella y salsa Match Food</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 10.000</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'jamonCordero')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -177,6 +179,7 @@
                     <h3>Salmón</h3>
                     <p>Salmon, tomate cherry, salsa de maracuya y queso mozzarella</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 14.000</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'salmon')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -191,6 +194,7 @@
                     <h3>Atún</h3>
                     <p>Lomitos de atún con salsa de la casa, frescos vegetales y queso mozzarella</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 11.500</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'atun')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -205,6 +209,7 @@
                     <p>Estragón, lechuga romana, tomate, cebolla, champiñones, zanahoria, apio, pimentón,
                     maíz, salsa teriyaki, queso amarillo y salsa MatchFood.</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 10.000</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'vegetariano')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -218,6 +223,7 @@
                     <h3>Fondue de Carne</h3>
                     <p>Queso funido, champiñones salteados, salsa de la casa, tocineta y tomate</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 13.000</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'fondueCarne')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -232,6 +238,7 @@
                     <h3>Lomo de Res</h3>
                     <p>Tiras de lomo de res, aritos de cebolla, tomate, pimenton, queso mozzarella y salsa Match Food Reload</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 11.000</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'lomoRes')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -245,6 +252,7 @@
                     <h3>Pollo</h3>
                     <p>Queso fundido, pechuga a la plancha, deliciosos vegetales frecos, lechuga y salsa Match Food</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 9.500</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'pollo')}">+ Añadir al Carro</a>
                     </p>
                 </div>
@@ -259,6 +267,7 @@
                     <p>Carne desmechada, chile, queso mozzarella, tomate, guacamole, cilantro,
                     lechuga, nachos, cebolla roja, y salsa MatchFood.</p>
                     <p>
+                        <h3><b><p class="text-primary">$ 10.500</p></b></h3>
                         <a class="btn btn-primary btn-large" href="${createLink(controller: 'testShoppingCart', action: 'mexicano')}">+ Añadir al Carro</a>
                     </p>
                 </div>

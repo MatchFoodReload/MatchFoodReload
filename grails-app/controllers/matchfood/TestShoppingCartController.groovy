@@ -32,7 +32,7 @@ class TestShoppingCartController {
     def show = { }
     def carneDeRes() {
         if(contCarne==0){
-            def producto = new Producto(name: 'Carne de Res', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Carne de Res', price: '9000', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             contCarne = contCarne+1
@@ -42,7 +42,7 @@ class TestShoppingCartController {
 
     def jamonCordero() {
         if(conCordero==0){
-            def producto = new Producto(name: 'Cordero', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Cordero', price: '10000', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conCordero = conCordero+1
@@ -52,7 +52,7 @@ class TestShoppingCartController {
 
     def salmon() {
         if(conSalmon==0){
-            def producto = new Producto(name: 'Salmón', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Salmón', price: '14000', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conSalmon = conSalmon+1
@@ -62,7 +62,7 @@ class TestShoppingCartController {
 
     def atun() {
         if(conAtun==0){
-            def producto = new Producto(name: 'Atún', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Atún', price: '11500', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conAtun = conAtun+1
@@ -72,7 +72,7 @@ class TestShoppingCartController {
 
     def vegetariano() {
         if(conVegetal==0){
-            def producto = new Producto(name: 'Vegetariano', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Vegetariano', price: '10000', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conVegetal = conVegetal+1
@@ -82,7 +82,7 @@ class TestShoppingCartController {
 
     def fondueCarne() {
         if(conFondue==0){
-            def producto = new Producto(name: 'Fondue de Carne', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Fondue de Carne', price: '13000', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conFondue = conFondue+1
@@ -92,7 +92,7 @@ class TestShoppingCartController {
 
     def lomoRes() {
         if(conLomo==0){
-            def producto = new Producto(name: 'Lomo de Res', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Lomo de Res', price: '11000', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conLomo = conLomo+1
@@ -102,7 +102,7 @@ class TestShoppingCartController {
 
     def pollo() {
         if(conPollo==0){
-            def producto = new Producto(name: 'Pollo', shoppingItem:shoppingCartService.getShoppingItem())
+            def producto = new Producto(name: 'Pollo', price: '9500', shoppingItem:shoppingCartService.getShoppingItem())
             producto.save()
             producto.addToShoppingCart()
             conPollo = conPollo+1
@@ -120,7 +120,7 @@ class TestShoppingCartController {
         render(view:"index")
     }
 
-    def add = {
+    def agregar = {
         def product
         if (params.class == 'class+com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct') {
             product = ShoppingCartInterfaceTestProduct.get(params.id)
@@ -141,7 +141,7 @@ class TestShoppingCartController {
         render(template:'shoppingCartContent', plugin:'shoppingCart')
     }
 
-    def remove = {
+    def eliminar = {
         def product
         if (params.class == 'class+com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct') {
             product = ShoppingCartInterfaceTestProduct.get(params.id)
@@ -163,7 +163,7 @@ class TestShoppingCartController {
         render(template:'shoppingCartContent', plugin:'shoppingCart')
     }
 
-    def removeAll = {
+    def eliminarTodo = {
         def product
         if (params.class == 'class+com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct') {
             product = ShoppingCartInterfaceTestProduct.get(params.id)

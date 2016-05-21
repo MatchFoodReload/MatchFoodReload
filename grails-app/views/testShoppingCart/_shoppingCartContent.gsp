@@ -4,10 +4,13 @@
 			${com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])}
 		</td>
 		<td>
+			${it}
+		</td>
+		<td>
 			${it['qty']}
 		</td>
 		<td>
-			<g:remoteLink action="add"
+			<g:remoteLink action="agregar"
 				params="${[id:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).id, class:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).class, version:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).version]}"
 				update="shoppingCartContent"
 				onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
@@ -15,19 +18,19 @@
 			</g:remoteLink>
 		</td>
 		<td>
-			<g:remoteLink action="remove"
+			<g:remoteLink action="eliminar"
 				params="${[id:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).id, class:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).class, version:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).version]}"
 				update="shoppingCartContent"
 				onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-				Remover
+				Eliminar
 			</g:remoteLink>
 		</td>
 		<td>
-			<g:remoteLink action="removeAll"
+			<g:remoteLink action="eliminarTodo"
 				params="${[id:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).id, class:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).class, version:(com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])).version]}"
 				update="shoppingCartContent"
 				onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-				Remover Todos
+				Eliminar Todo
 			</g:remoteLink>
 		</td>
 	</tr>

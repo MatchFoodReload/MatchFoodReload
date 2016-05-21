@@ -19,14 +19,14 @@
                     <thead>
                         <tr>
                         
-                   	        <th>Sándwich</th>
+                   	        <th>Sándwich&nbsp;</th>
 
-							<th>&nbsp;</th>
+							<th>Precio&nbsp;</th>
 
-                   	        <th>Cantidad</th>
+                   	        <th>Cantidad&nbsp;</th>
 
                    	        <th>&nbsp;</th>
-
+							<th>&nbsp;</th>
                    	        <th>&nbsp;</th>
                    	    
                         </tr>
@@ -61,11 +61,11 @@
 									${product}
 								</td>
 								<td>
-									<g:remoteLink action="add"
+									<g:remoteLink action="agregar"
 										params="${[id:product.id, class:product.class, version:product.version]}"
 										update="shoppingCartContent"
 										onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-										Add
+										Agregar
 									</g:remoteLink>
 								</td>
 							</tr>
@@ -76,11 +76,11 @@
 									${product}
 								</td>
 								<td>
-									<g:remoteLink action="add"
+									<g:remoteLink action="agregar"
 										params="${[id:product.id, class:product.class, version:product.version]}"
 										update="shoppingCartContent"
 										onComplete="Effect.Pulsate('shoppingCartContent', {pulses: 1, duration: 1.0});">
-										Add
+										Agregar
 									</g:remoteLink>
 								</td>
 							</tr>

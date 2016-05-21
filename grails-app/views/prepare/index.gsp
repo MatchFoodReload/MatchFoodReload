@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-sm-3">
                     <input id="panQue" type="image" style ="height: 100%; width: 100%" src="${createLinkTo(dir:'images',file:'DragAndDrop/presentacionPanQueso.png')}" />
-                    <p style="text-align: center"><b>Queso</b></p>
+                    <p style="text-align: center"><b>Oregano</b></p>
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@ function tutorial() {
             }
         }
 
-        var total = 4000*contadorCarnes + 2000*contadorAcompañantes
+        var total = 3000*contadorCarnes + 1000*contadorAcompañantes
         $("#totalR").val(total);
 
         var r = confirm("Proteina: " + contadorCarnes.toString() + "\nIngredientes: " + contadorAcompañantes.toString() + "\nTotal a Pagar: $ " + total);
