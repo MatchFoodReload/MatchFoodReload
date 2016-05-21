@@ -54,9 +54,9 @@
                     <thead>
                     <tr>
 
-                        <th>Sándwich.........Precio</th>
+                        <th>Sándwich&nbsp;</th>
 
-                        <th>&nbsp;Cantidad&nbsp;</th>
+                        <th>Cantidad&nbsp;</th>
 
                         <th>&nbsp;</th>
 
@@ -84,7 +84,7 @@
                     <tr>
 
                         <th>Producto&nbsp;</th>
-
+                        <th>Precio Unidad&nbsp;</th>
                         <th>&nbsp;</th>
 
                     </tr>
@@ -93,8 +93,11 @@
                     <g:each in="${com.metasieve.shoppingcart.Shoppable.list()}" var="product">
                         <tr>
                             <td>
-                                ${product}
+                                ${product.name}
                                 &nbsp;&nbsp;
+                            </td>
+                            <td>
+                                ${product.price}
                             </td>
                             <td>
                                 &nbsp;

@@ -11,10 +11,9 @@ class Producto extends Shoppable{
         precio_producto nullable: false
     }*/
     String name
-    int price
+    String price
 
     String toString() {
-        String precio = " \$ " + getPrice()
-        return name + "\t\t\t" + precio
+        return name
     }
 }

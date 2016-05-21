@@ -4,9 +4,6 @@
 			${com.metasieve.shoppingcart.Shoppable.findByShoppingItem(it['item']) ?: com.metasieve.shoppingcart.ShoppingCartInterfaceTestProduct.findByShoppingItem(it['item'])}
 		</td>
 		<td>
-			${it}
-		</td>
-		<td>
 			${it['qty']}
 		</td>
 		<td>
