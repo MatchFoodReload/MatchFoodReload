@@ -24,4 +24,9 @@ class PrepareController {
         def test=Producto.findAll()
         render(test)
     }
+
+    def hola (){
+        String precio = params.totalR
+        redirect(controller: "TestShoppingCart", action: "personalizado", params: [price:precio] )
+    }
 }

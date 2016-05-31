@@ -167,7 +167,7 @@
 
 
             <div style="display: block">
-                <form role="form" controller="/MatchFood/PrepareController" action="index" method="post">
+                <form role="form" controller="/MatchFood/PrepareController" action="hola" method="post">
                     <input id="totalR" name="totalR" style="visibility: hidden" value="0"/>
                     <input id="btn_terminar" value="Terminar" type="submit" style="display: block; z-index: 3;left: 630px; top: 980px; position: absolute;" class="btn btn-default btn-lg"/>
                 </form>
@@ -196,6 +196,7 @@
     </div>
 </div-->
 <g:javascript>
+    $("#totalR").val(20000);
     var contadorElementos = 0;
     var contadorCarnes = 0;
     var contadorAcompañantes = 0;
@@ -592,9 +593,6 @@ $('#BBQ').click(function(){
             console.log(event);
         }
     });
-
-
-
 </g:javascript>
 </body>
 </html>

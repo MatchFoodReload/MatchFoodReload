@@ -19,6 +19,7 @@ class TestShoppingCartController {
     def conLomo = 0
     def conPollo = 0
     def conMexicano = 0
+    def conPersonalizado = 0
 
     def index = {
         /*if (Producto.count == 0) {
@@ -28,6 +29,27 @@ class TestShoppingCartController {
         redirect(action:show, params:params)*/
         render(view:"index")
     }
+
+    def personalizado( ) {
+        if(conPersonalizado == 0){
+            String p = params.price
+            System.out.println(p)
+            def producto = new Producto(name: 'Personalizado', price: p, shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
+            producto.addToShoppingCart()
+            conPersonalizado = conPersonalizado + 1
+        } else {
+            String p = params.price
+            String n = "Personalizado " + conPersonalizado.toString()
+            System.out.println(p)
+            def producto = new Producto(name: n, price: p, shoppingItem:shoppingCartService.getShoppingItem())
+            producto.save()
+            producto.addToShoppingCart()
+            conPersonalizado = conPersonalizado + 1
+        }
+        render(view:"index")
+    }
+
 
     def show = { }
     def carneDeRes() {
