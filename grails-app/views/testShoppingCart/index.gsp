@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Andréslee
+  User: dabaq
   Date: 22/04/2016
   Time: 9:11 AM
 --%>
@@ -39,7 +39,7 @@
     <div id="divCarBox" style="background: none repeat scroll 0 0 darkgray; visibility: hidden;
     border: 1px solid #DDDDDD;
     border-radius: 5px 5px 5px 5px;
-    bottom: 280px;
+    top: 100px;
     left: auto;
     margin-left: 750px;
     padding: 10px;
