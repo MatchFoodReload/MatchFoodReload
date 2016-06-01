@@ -27,8 +27,8 @@
     </header>
 
     <div id="divCar" style="background-color: transparent;
-    bottom: 480px;
-    margin-left: 1050px;
+    bottom: 60%;
+    margin-left: 80%;
     padding: 10px 0 0;
     position: fixed;
     text-align: center;
@@ -39,13 +39,13 @@
     <div id="divCarBox" style="background: none repeat scroll 0 0 darkgray; visibility: hidden;
     border: 1px solid #DDDDDD;
     border-radius: 5px 5px 5px 5px;
-    top: 100px;
+    top: 34%;
     left: auto;
-    margin-left: 750px;
+    margin-left: 55%;
     padding: 10px;
     position: fixed;
     text-align: center;
-    width: 400px;
+    width: 30%;
     z-index: 15;">
         <div class="body">
             <h3>Carrito de Compras</h3>
